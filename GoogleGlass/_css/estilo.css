@@ -1,0 +1,350 @@
+/* Cascade Style Sheet */
+@charset "UTF-8";
+
+/* https://fonts.google.com/?query=titi&selection.family=Titillium+Web */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+@font-face
+{
+	font-family:'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/* Corpo */
+body
+{
+	color: rgba(0,0,0,1);
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+}
+
+/* Bloco Interface */
+div#interface
+{
+	/* Cima - Direita - Baixo - Esquerda */
+	width: 900px;
+	margin: -20px auto 0px auto;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	background-color: #ffffff;
+}
+
+/* Parágrafo */
+p
+{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/* Links */
+a
+{
+	color: #606060;
+	text-decoration: none;
+}
+
+/* Efeito no link (Project Glass) */
+a:hover
+{
+	text-decoration: underline;
+}
+
+header#cabecalho
+{
+	/* Tipo de linhas: solid, dashed, dotter, double */
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0% 80%;
+	border-bottom: 1px #606060 solid;
+}
+
+header#cabecalho h1
+{
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	
+	font-size: 30pt;
+	font-family: 'FonteLogo', sans-serif;
+	
+	padding: 0px 0px 0px 0px; /* Posição da escrita Google Glass (Mudar o primeiro padding) */
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2
+{
+	color: #888888;
+	
+	font-size: 15pt;
+	font-family: 'Titillium Web', sans-serif;
+	
+	padding: 0px 0px 0px 0px;
+	margin-top: 0px;
+}
+
+/* Imagem do icone */
+img#icone
+{
+	top: 70px;
+	
+	/* left: 780px; */
+	left: 800px; /* Posição da imagem */
+	position: absolute;
+	
+	width: 135px;
+}
+
+/* Imagem */
+figure.foto-legenda
+{
+	border: 8px solid white;
+	box-shadow: 1px 1px 1px black;
+
+	position: relative;
+}
+
+/* Imagem: glass-quadro-homem-mulher.jpg */
+figure.foto-legenda img
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* Figcaption: Legenda da figura */
+figure.foto-legenda figcaption
+{
+	top: 0px;
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+	
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+/* Figcaption: Legenda da figura */
+figure.foto-legenda:hover figcaption
+{
+	opacity: 1;	
+}
+
+/* Formatação do Menu */
+nav#menu
+{
+	display: block;
+}
+
+/* Fomatação para o h1 */
+nav#menu h1
+{
+	display: none;	
+}
+
+/* Lista 'ul' */
+nav#menu ul
+{
+	top: -20px;
+	left: 380px;
+	position: absolute;
+	
+	list-style: none;
+	text-transform: uppercase;
+}
+
+/* Itens na lista (Acessar http://expressprefixr.herokuapp.com/) */
+nav#menu li
+{
+	margin: 2px;
+	padding: 10px;
+	display: inline-block;
+	background-color: #dddddd;
+	
+	transition: background-color 1s;
+	-o-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+}
+
+/* Itens no menu mudam de cor */
+nav#menu li:hover
+{
+	background-color: #606060;	
+}
+
+/* Escrito no item (li) */
+nav#menu a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Section: Seção*/
+section#corpo
+{
+	width: 500px;
+	float: left;
+	display: block;
+	
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+article#noticia-principal h2
+{
+	color: #606060;
+
+	margin: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 10px;
+
+	font-size: 13pt;
+	background-color: #dddddd;
+}
+
+.direita
+{
+	text-align: right;
+}
+
+header#cabecalho-artigo h1
+{
+	color: #606060;
+
+	font-size: 20pt;
+	font-family: 'FonteLogo', sans-serif;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2
+{
+	color: #cecece;
+	background-color: #ffffff;
+
+	font-size: 13pt;
+
+	margin: 0px 0px 0px 0px;
+	margin-top: 0px 0px 0px 0px;
+}
+
+header#cabecalho-artigo h3
+{
+	color: #606060;
+	font-size: 12px;
+}
+
+/* Tabela */
+table#tabelaspec
+{	
+	border: 1px solid #606060;
+	border-spacing: 0px;
+
+	margin-left: 50px;
+	margin-right: auto;
+}
+
+table#tabelaspec td
+{
+	border: 1px solid #606060;
+	padding: 10px 10px 10px 10px;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabelaspec td.ce
+{
+	color: #ffffff;
+	background-color: #606060;
+
+	font-weight: bold;
+	vertical-align: top;
+}
+
+table#tabelaspec td.cd
+{
+	background-color: #cecece;	
+}
+
+table#tabelaspec caption
+{
+	color: #888888;
+
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span
+{
+	float: right;
+	display: block;
+
+	color: #000000;
+	font-size: 8pt;
+
+	margin-top: 10px;
+}
+
+/* Aside: Barra Lateral*/
+aside#lateral
+{
+	width: 350px;
+
+	float: right;
+	display: block;
+
+	padding: 10px;
+	margin-top: 10px;
+
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	background-color: #dddddd;
+}
+
+aside#lateral h1
+{
+	color: #606060;
+
+	margin-top: 0px;
+
+	font-size: 20pt;
+	font-family: 'FonteLogo', sans-serif;	
+}
+
+aside#lateral h2
+{
+	padding: 5px 5px 5px 5px;
+
+	color: #ffffff;
+	font-size: 13px;
+	background-color: #606060;
+}
+
+/* Footer: Rodape */
+footer#rodape
+{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p
+{
+	text-align: center;	
+}
+
+/* Videos */
+video#filme
+{
+	width: 100%;	
+}

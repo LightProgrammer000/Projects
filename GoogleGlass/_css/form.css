@@ -1,0 +1,65 @@
+/* CSS */
+@charset "utf-8";
+
+/* Formulário */
+form
+{
+	width: 500px;
+	margin: auto;
+}
+
+/* Caixas de texto */
+input, textarea
+{
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: sans-serif;
+	
+	background-color: rgba(255,255,255,0.8);
+}
+
+/* Caixas de texto */
+input:hover, textarea:hover
+{
+	background-color: #dddddd;
+}
+
+/* Legendas */
+legend
+{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+/* Campo de texto */
+fieldset
+{
+	margin: 20px;
+	border-color: #cecece;
+}
+
+/* Campo de texto: Identificação do Usuário */
+fieldset#usuario
+{
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+/* Campo de texto: Endereço do Usuário */
+fieldset#endereco
+{
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+/* Campo de texto: Mensagem do Usuário */
+fieldset#mensagem
+{
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+/* Campo de texto: Sexo */
+fieldset#sexo
+{
+	width: 150px;
+}
