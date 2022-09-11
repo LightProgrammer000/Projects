@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title> Testando conexão ao banco de dados </title>
+
+<script>
+</script>
+
+<style>
+fieldset
+{
+	width: 50%;
+	margin-top: 0px;
+}
+
+fieldset > legend#a
+{
+	margin-bottom: 16px;
+}
+</style>
+
+</head>
+
+<body>
+	<h2> PHP com MySQL - Efetuando Atualização do Cliente no Banco de Dados </h2>
+	<p> &nbsp; </p>
+
+	<!-- Formulário -->
+	<form name="cadastro" action="../PHP/Atualiza.php" method="POST">
+
+	<!-- Id -->
+	<fieldset>
+	<legend> ID </legend>
+	<label> Identificador: </label>
+	<input type ="number" name="identificador"> </input>
+	</fieldset> <br> <br>
+
+	<!-- Nome -->
+	<fieldset>
+	<legend id="a"> Formulário </legend>
+	<label id="nom"> Nome: </label>
+	<input type="text" name="nome" placeholder="Digite seu nome aqui" size="30" maxlength="30" autofocus> </input> <br> <br>
+
+	<!-- Sobrenome -->
+	<label id="sob"> Sobrenome: </label>
+	<input type="text" name="sobrenome" placeholder="Digite seu sobrenome aqui" size="30" maxlength="30"> </input> <br> <br>
+	</fieldset> <br> <br>
+
+	<!-- Sexo -->
+	<fieldset>
+	<legend> Sexo </legend>
+	<select name="sexo">
+	<option value="M"> Masculino </option>
+	<option value="F"> Feminino </option>
+	<option value="N"> Não Declarado </option>
+	</select>
+	</fieldset> <br> <br>
+
+	<!-- Botão -->
+	<input type="submit" name="submit" value="Enviar"> </input> <br> <br>
+	<input type="reset" name="reset" value="Limpar"> </input> <br> <br> <br>
+	<button type="button"> <a href ="../"> Voltar </a> </button>
+
+	</form>
+</body>
+
+</html>
