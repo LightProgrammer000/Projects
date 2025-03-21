@@ -7,10 +7,10 @@ Este repositório contém uma coleção de projetos desenvolvidos em diversas li
 O repositório está organizado da seguinte forma:
 
 
-- **GoogleGlass/**: Projeto desenvolvido utilizando HTML, CSS e PHP. [Descrição do projeto GoogleGlass].
-- **PHP-Crud/**: Implementação de operações CRUD (Create, Read, Update, Delete) utilizando PHP. [Descrição do projeto PHP-Crud].
-- **Robocop/**: Aplicação desenvolvida com HTML, CSS e PHP. [Descrição do projeto Robocop].
-- **Tarefas/**: Gerenciador de tarefas simples utilizando PHP. [Descrição do projeto Tarefas].
+- **GoogleGlass/**: Projeto desenvolvido utilizando HTML, CSS e PHP.
+- **PHP-Crud/**: Implementação de operações CRUD (Create, Read, Update, Delete) utilizando PHP.
+- **Robocop/**: Aplicação desenvolvida com HTML, CSS e PHP.
+- **Tarefas/**: Gerenciador de tarefas simples utilizando PHP.
 
 ## Tecnologias Utilizadas
 
